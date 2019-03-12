@@ -1,7 +1,7 @@
 {
-  "name": "hawksworx.com",
+  "name": "philiptutty.co.uk",
   "version": "2.0.1",
-  "description": "Phil Hawksworth's personal website - hawksworx.com",
+  "description": "Phil Tutty's personal website - philitutty.co.uk",
   "scripts": {
     "start": "gulp build & gulp watch & ELEVENTY_ENV=dev eleventy --serve & yarn run start:lambda",
     "prime": "gulp build & ELEVENTY_ENV=prime eleventy",
@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/philhawksworth/hawksworx.com"
+    "url": "https://github.com/ptutty/philiptutty.co.uk.git"
   },
-  "author": "Phil Hawksworth",
+  "author": "Phil Tutty",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "0.5.4",
