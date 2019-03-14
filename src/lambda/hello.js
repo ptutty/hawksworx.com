@@ -1,30 +1,17 @@
-/**
- *  This is a serverless function  which runs in AWS Lambda.
- *  It is deployed via Netlify so that building, versioning
- *  and deploying is easier than it might be otherwise.
- *
- *  No need to configure AWS, just include a file like this in
- *  your code, and deploy as you would any other site on Netlify.
- *
- *  https://www.netlify.com/docs/functions/
- */
-
-'use strict';
 
 
-// A standard Lambda function handler
 export function handler(event, context, callback) {
 
-  // Who's there?
-  const { name } = event.queryStringParameters;
+  // grab the parameters from the request
+  const params = event.queryStringParameters;
 
-  // Say hello
-  callback(null, {
+  // Report back to our logs
+  console.log(`You called the Lambda function with all of these parameters: ${JSON.stringify(params)}`);
+
+  // send a response
+  return callback(null, {
     statusCode: 200,
-    headers: { "Content-Type": "text/html" },
-    body: `<html>Hello from a serverless
-      <a href="https://github.com/philhawksworth/hawksworx.com/blob/master/src/lambda/hello.js">function</a>,
-      <em>${name}!</em></hml>`
+    body: `Hello from the serverless function. Called with these parameters: ${JSON.stringify(params)}`
   });
 
-}
+};
