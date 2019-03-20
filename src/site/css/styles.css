@@ -43,6 +43,23 @@ header {
   margin-bottom: 2.5rem;
 }
 
+h1.blog-title {
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  font-family: 'Rubik', sans-serif;
+}
+
+.blog-text {
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
 @media (min-width: 992px) {
   footer {
     width: 40%;

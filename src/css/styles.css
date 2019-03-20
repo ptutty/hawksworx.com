@@ -8,7 +8,7 @@ footer {
 }
 
 header {
-  @apply sticky pin-t
+  @apply sticky pin-t;
 }
 
 .header-inner {
@@ -16,12 +16,22 @@ header {
 }
 
 .side-bar-left {
-  @apply bg-black w-full
+  @apply w-full
 }
 
 .side-bar-right-inner {
   @apply mx-auto w-3/5 max-w-3xl my-10
 }
+
+h1.blog-title {
+  @apply text-5xl text-white uppercase leading-none pb-16 pt-16;
+  font-family: 'Rubik', sans-serif;
+}
+
+.blog-text {
+  @apply text-white my-4 text-xl
+}
+
 
 
 @screen lg {
