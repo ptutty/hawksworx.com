@@ -1,64 +1,27 @@
----
-pageClass: dark-theme theme-black
----
 
 {% extends 'layouts/page.njk' %}
 
 {% block sidebar %}
-  <h1>Philip Tutty</h1>
-  {# <p class="phonetic">
-   /hɔːkswəːks/
-  </p> #}
-  <p>
+  <h1 class="text-4xl text-white uppercase">Careers blog</h1>
+
+  <p class="text-white my-4 text-1xl">
     The blog, playground and portfolio for <a href="/about" class="no-wrap">Phil Tutty</a>
   </p>
 {% endblock %}
 
 {% block content %}
-  <p>
-    You can usually find me on <a href="https://twitter.com/mrtutty">Twitter</a>. And you can sometimes find me at web development <a href="/speaking">conferences</a>, where I might be talking about development techniques. I blog here less frequently than I'd like, but manage it a little more often on the <a href="https://www.netlify.com/blog">Netlify blog</a>.
+
+<p class="my-5">
+    You can usually find me on <a href="https://twitter.com/mrtutty">Twitter</a>. And you can sometimes find me at web development <a href="/speaking">conferences</a>, where I might be talking about development techniques. </a>.
   </p>
 
 
   <hr />
 
-  <h2><a href="/blog">Recently on the blog</a></h2>
+  <h2 class="mb-10"><a href="/blog">Recently on the blog</a></h2>
   {% set item = collections.posts | first %}
   {% include 'post-teaser.njk' %}
 
-  <hr />
 
-  {% if notist.events.future.length %}
-  {% set item = notist.events.future | last %}
-  <h2><a href="/speaking#upcoming">Next conference appearance</a></h2>
-  {%- include "event.njk" -%}
-  {% endif %}
 
-  <hr />
-
-  <h2 id="instagram"><a href="https://instagram.com/philhawksworth">Recently on Instagram</a></h2>
-  <div class="thumbnail-grid">
-  {% for entry in instagram.slice(0,12) %}
-    <a href="{{ entry.link }}" target="_BLANK" rel="noopener">
-      <img src="{{ entry.images.thumbnail.url }}" alt="Instagram photo: {{ entry.caption.text }}" />
-    </a>
-  {%- endfor -%}
-  </div>
-
-  <hr />
-
-  <h2 id="tweets"><a href="https://twitter.com/philhawksworth">Recently on Twitter</a></h2>
-  <p>
-    Recently posted on <a href="https://twitter.com/philhawksworth">@philhawksworth</a> (excluding @replies).
-  </p>
-  {%- for i in range(0, 3) -%}
-  {% set item = tweets.recent[i] %}
-  {% include 'tweet.njk' %}
-  {%- endfor -%}
-  <p>
-    <em>
-      These tweets are pulled from Twitter and baked into this page automatically whenever I tweet. You can <a href="/blog/keeping-a-jamstack-site-feeling-fresh-with-recent-tweets/">read about how</a> in a blog post.
-    </em>
-  </p>
-
-{% endblock %}
+  {% endblock %}

@@ -1,0 +1,64 @@
+
+body {
+  @apply font-sans leading-normal leading-loose tracking-normal
+}
+
+footer {
+  @apply w-full flex bg-black h-32 py-10
+}
+
+header {
+  @apply sticky pin-t
+}
+
+.header-inner {
+  @apply mx-auto w-3/5 max-w-3xl my-20
+}
+
+.side-bar-left {
+  @apply bg-black w-full
+}
+
+.side-bar-right-inner {
+  @apply mx-auto w-3/5 max-w-3xl my-10
+}
+
+
+@screen lg {
+  footer {
+    @apply w-2/5 pin-b pin-l fixed
+  }
+
+  .header-inner {
+    @apply min-h-screen
+  }
+
+  .side-bar-left {
+    @apply w-2/5
+  }
+  .side-bar-right {
+    @apply w-3/5
+  }
+
+
+}
+
+
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
