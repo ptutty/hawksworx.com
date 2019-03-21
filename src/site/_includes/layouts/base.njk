@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="{{ pageClass }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
     <title>{%- if title -%}{{ title }}{%- else -%}Phil Tutty{%- endif -%}</title>
     <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Phil Tutty's home on the web. Read his blog, ask questions, and find coverage of his recent conference talks about web development.{%- endif -%}"/>
@@ -11,29 +11,26 @@
     {% include "favicons.njk" %}
     {% include "social.njk" %}
   </head>
-  <body >
+  <body>
 
-    <div class="flex flex-wrap">
-
-        <div class="side-bar-left {{ pageClass }}">
-
-        <header>
-
-          <div class="header-inner">
+    <div class="sidebar">
+      <header>
+        <div class="sidebar-container">
             {% include "navigation.njk" %}
+            <div class="page-details">
+              {% block sidebar %}
+                <h1>{{ title }}</h1>
+                <p>{{ subtitle }}</p>
 
-            {% block sidebar %}
-              <p>{{ subtitle }}</p>
-              <h1>{{ title }}</h1>
-            {% endblock %}
-          </div>
-
-        </header>
+              {% endblock %}
+            </div>
 
         </div>
+      </header>
+    </div>
 
-        <div class="side-bar-right">
-          <div class="side-bar-right-inner">
+    <div class="main" >
+       <div class="inner-container">
             <!-- content -->
             {% block content %}
             {{ content | safe }}
@@ -42,24 +39,19 @@
             {% block credits %}
             {% include "page-credits.njk" %}
             {% endblock %}
-          </div>
+        </div>
 
-
-          <!-- footer -->
-          <footer>
-            <div class="mx-auto">
+        <!-- footer -->
+        <footer>
+          <div class="solid-footer">
+            <div class="inner-container">
               {% block prefooter %}{% endblock %}
               {% include "footer.njk" %}
             </div>
-          </footer>
-
-
-        </div>
+          </div>
+        </footer>
 
     </div>
-
-
-
 
     <script>{% include "js/hawksworx.js" %}</script>
   </body>

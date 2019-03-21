@@ -1,0 +1,28 @@
+---
+title: a test publication
+date: 2019-03-21 14:12
+publishdate: 2019-03-21 14:12
+draft: false
+description: Building a tool to provide comments and other user generated content
+  for sites built with static site generators like Jekyll.
+tags:
+  - ssg
+  - static
+  - jamstack
+---
+
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+<!--more-->
+
+## Curating a lineup for the audience
+
+Over the course operating Comedy in the Crown, Lee and I have come to know the local audience. We are very lucky to have some lovely regulars who support us most weeks, but in addition to that we've learned what types of acts tend to do well in St Albans and at our night.
+
+It's wonderful to see the enthusiasm so many performers have for coming to The Crown, and we've tried to give opportunities to comedians with different levels of experience, and a wide variety of styles. Of the more than 400 different performers who have appeared at comedy in the Crown, several have become audience favorites who have performed multiple times. There is a friendly atmosphere that we worked hard to cultivate, and cherish.
+
+Lee has amassed quite a bit of knowledge of different acts and has a freakishly good memory for their various styles. This helped us craft a lineup for our first ticketed night that we felt would land well with the audience we had come to know.
+
+We were delighted to be able to book:

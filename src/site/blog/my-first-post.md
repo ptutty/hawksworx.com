@@ -1,13 +1,13 @@
 ---
-title: Adding search to a JAMstack site
-description: Using progressive enhancement, JavaScript and a static site generator to create site search facility.
-date: 2018-10-18
+title: My first Post
+description: Setting up front matter on MarkDown.
+date: 21/03/2019
 allowcomments: true
-tags: ["jamstack", "javascript", "tips"]
+tags: ["NPM", "ATOM", "Markdown"]
 photoCredits:
   - name: "Sandro Kradolfer"
     url: "https://unsplash.com/photos/IVYZWptFt1g"
-pageClass: "dark-theme theme-steelblue"
+pageClass: "blue-theme"
 ---
 
 Search is often cited as a limitation of static sites. Searching _feels_ dynamic, so surely it is impossible on a _static_ site, right? Thankfully not. Here is a nice technique to use with most any [static site generator](https://staticgen.com) and a little JavaScript as a progressive enhancement to add search functionality to your [JAMstack](https://jamstack.org) site.

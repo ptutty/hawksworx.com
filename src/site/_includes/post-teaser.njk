@@ -1,24 +1,24 @@
 
-  <div>
-    <p class="text-sm text-grey-darker">{{ item.date | dateDisplay }}</p>
-    {% if item.data.externalurl %}
-    <h2><a href="{{ item.data.externalurl }}">{{ item.data.title }}</a><img src="/images/icons/external-link-icon.svg" class="external-link" alt="Read this post on the site on which it was posted."></h2>
-    {% else %}
-    <h2><a  class="text-grey-darkest" href="{{ item.url }}">{{ item.data.title }}</a></h2>
-    {% endif %}
-    <div class="tags">
-    {% for tag in item.data.tags -%}
-      <a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a>
-      {{ "" if loop.last else "," }}
-    {% endfor -%}
-    </div>
-    <div class="my-5">
-    {{ item.templateContent | section | safe }}
-    </div>
-    {% if item.data.externalurl %}
-    <a href="{{ item.data.externalurl }}" class="more-link btn external-link">read more <img src="/images/icons/external-link-icon.svg" class="external-link" alt="Read this post on the site on which it was posted."></a>
-    {% else %}
-    <a class="border bg-grey-light p-3 rounded" href="{{ item.url }}" class="more-link btn">read more</a>
-    {% endif %}
+<div class="blog-list-item">
+<p class="by-line">{{ item.date | dateDisplay }}</p>
+{% if item.data.externalurl %}
+<h2><a href="{{ item.data.externalurl }}">{{ item.data.title | safe }}</a><img src="/images/icons/external-link-icon.svg" class="external-link" alt="Read this post on the site on which it was posted."></h2>
+{% else %}
+<h2><a href="{{ item.url }}">{{ item.data.title | safe }}</a></h2>
+{% endif %}
+<div class="tags">
+{% for tag in item.data.tags -%}
+  <a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a>
+  {{ "" if loop.last else "," }}
+{% endfor -%}
+</div>
+<div class="grab">
+{{ item.templateContent | section | safe }}
+</div>
+{% if item.data.externalurl %}
+<a href="{{ item.data.externalurl }}" class="more-link btn external-link">read more <img src="/images/icons/external-link-icon.svg" class="external-link" alt="Read this post on the site on which it was posted."></a>
+{% else %}
+<a href="{{ item.url }}" class="more-link btn">read more</a>
+{% endif %}
 
-  </div>
+</div>
