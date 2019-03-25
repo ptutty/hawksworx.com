@@ -1,6 +1,5 @@
 
 const gulp      = require("gulp");
-// const sass      = require("gulp-sass"); // now using postCSS and tailwindcss instead
 const uglify    = require('gulp-uglify');
 const concat    = require('gulp-concat');
 const postcss = require('gulp-postcss');

@@ -7,10 +7,10 @@ tags: ["jamstack", "javascript", "tips"]
 photoCredits:
   - name: "Sandro Kradolfer"
     url: "https://unsplash.com/photos/IVYZWptFt1g"
-pageClass: "dark-theme theme-steelblue"
+pageClass: "teal-theme"
 ---
 
-Search is often cited as a limitation of static sites. Searching _feels_ dynamic, so surely it is impossible on a _static_ site, right? Thankfully not. Here is a nice technique to use with most any [static site generator](https://staticgen.com) and a little JavaScript as a progressive enhancement to add search functionality to your [JAMstack](https://jamstack.org) site.
+CMALT, our Certified Membership scheme,  is a peer-based professional accreditation scheme developed by ALT to enable people whose work involves learning technology to have their experience and capabilities certified by peers and demonstrate that they are taking a committed and serious approach to their professional development.
 
 ![Searching](/images/sandro-kradolfer-1077230-unsplash.png "Searching")
 

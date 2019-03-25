@@ -1,17 +1,21 @@
 ---
-title: "cmalt.md"
-description: What I need to do to get CMALT recognition.
-date: "2019-03-25"
+title: "Certified Membership (CMALT)"
+description: Certified Membership (CMALT) | Association for Learning Technology.
+date: "2019-03-24"
 allowcomments: true
 tags: ["Learning Tech", "Warwick", "Markdown"]
-pageClass: "blue-theme"
+pageClass: "teal-theme"
 ---
 
-## CMALT
+CMALT, our Certified Membership scheme,  is a peer-based professional accreditation scheme developed by ALT to enable people whose work involves learning technology to have their experience and capabilities certified by peers and demonstrate that they are taking a committed and serious approach to their professional development.
 
-Peer assessed accreditation  from ALT
+<!--more-->
+
+
 
 ### Overview
+
+Warwick University are now supporting staff interested in getting this certification which is issued by the Association for Learning Technology.
 
 - Cost associated - two years to complete
 - Yearly subscription
@@ -22,7 +26,6 @@ Peer assessed accreditation  from ALT
 #### funding
 
 £165 CMALT REGISTRATION - TALK TO DEPARTMENT
-
 
 
 

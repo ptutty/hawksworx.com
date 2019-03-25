@@ -1,44 +1,72 @@
+@tailwind preflight;
+@tailwind components;
+
 
 /* base page styles */
-body {
-  @apply font-serif
-}
+
 
 body a {
   @apply no-underline text-blue
 }
 
-body p {
-  @apply text-grey-darkest leading-loose text-base
+body {
+  @apply leading-loose text-grey-darker font-serif
 }
 
-h1,h2,h3,h4 {
+.main blockquote {
+  @apply py-4 px-4 border-grey-light border-l-8 ml-0 my-4
+}
+
+.main ul,ol {
+  @apply ml-0 my-4 pl-4
+}
+
+
+.main img {
+  @apply py-2
+}
+.main h1,h2,h3,h4 {
   @apply font-sans pt-4 pb-3 leading-normal text-grey-darkest
 }
 
 .sidebar {
-  @apply bg-grey-darker text-grey-lighter
+  @apply bg-grey-darker text-grey-light
+}
+
+.sidebar a {
+  @apply text-grey-darkest
+}
+
+.sidebar h1 {
+  @apply text-5xl uppercase tracking-normal py-3 text-white;
+  font-family: 'Anton', sans-serif;
+}
+
+.sidebar h1 {
+  @apply text-5xl uppercase tracking-normal py-3 text-white;
+  font-family: 'Anton', sans-serif;
+}
+
+.sidebar .by-line {
+  @apply text-sm
+}
+.sidebar .by-line a {
+  @apply border-b border-black
 }
 
 .main {
   @apply bg-white
 }
 
-.sidebar h1 {
-  @apply text-5xl uppercase tracking-normal py-3;
-  font-family: 'Anton', sans-serif;
+.main .inner-content {
+  @apply min-h-screen
 }
-
 .inner-container,.sidebar-container {
   @apply mx-auto w-4/5 max-w-3xl text-left
 }
 
 .inner-container {
   @apply pt-12 pb-16
-}
-
-.sidebar header {
-  @apply sticky pin-t
 }
 
 
@@ -55,7 +83,10 @@ h1,h2,h3,h4 {
 }
 
 footer .solid-footer {
-  @apply text-xs leading-tight py-3 px-0
+  @apply text-sm leading-tight py-3 px-0 text-black
+}
+footer .solid-footer a {
+  @apply text-white
 }
 
 header ul.nav {
@@ -81,8 +112,17 @@ header ul li a.home {
 
 
 .page-details h1 {
-  @apply text-5xl uppercase py-3 text-black;
+  @apply text-5xl uppercase py-3
 }
+
+.page-details .tags {
+  @apply list-reset
+}
+
+.teaser {
+    @apply text-xl mb-8 p-4 rounded bg-blue-light
+}
+
 
 /* blog items */
 
@@ -114,6 +154,40 @@ header ul li a.home {
 
 
 
+/* themes  */
+
+/* bright-theme */
+.bright-theme .sidebar,
+.bright-theme footer {
+  @apply bg-grey-lighter
+}
+
+/* dark-theme */
+.dark-theme .sidebar,.dark-theme footer {
+  @apply bg-grey-darkest text-grey-light
+}
+.dark-theme .page-details a  {
+  @apply underline
+}
+.dark-theme .page-details p  {
+  @apply text-grey-light
+}
+
+
+/* blue-theme */
+.blue-theme .sidebar,.blue-theme footer {
+  @apply bg-blue-dark
+}
+
+
+/* teal-theme */
+.teal-theme .sidebar,footer {
+  @apply bg-teal-dark
+}
+.teal-theme .sidebar h1 {
+  @apply text-black
+}
+
 
 
 /* media queries */
@@ -126,18 +200,23 @@ header ul li a.home {
       @apply w-3/5;
       max-width: 600px
   }
+
   footer {
     @apply fixed pin-b pin-l w-2/5
   }
+
   footer .inner-container {
     @apply mr-12 ml-auto
   }
+
   .inner-container {
     @apply ml-16
   }
+
   .sidebar-container {
     @apply mr-12 ml-auto
   }
+
   .page-details {
     @apply max-w-full
    }
@@ -166,61 +245,137 @@ header ul li a.home {
    }
 }
 
-/* themes  */
 
-/* bright-theme */
-.bright-theme .sidebar,
-.bright-theme footer {
-  @apply bg-grey-lighter
-}
-
-/* dark-theme */
-.dark-theme .sidebar,.dark-theme footer {
-  @apply bg-grey-darkest text-grey-light
-}
-.dark-theme .sidebar h1 {
-  @apply text-white
-}
-
-/* blue-theme */
-
-.blue-theme .sidebar,.blue-theme footer {
-  @apply bg-blue-dark text-black
-}
-
-.blue-theme .sidebar h1 {
-  @apply text-white
-}
-
-
-/* teal-theme */
-.teal-theme .sidebar,.teal-theme footer {
-  @apply bg-teal-dark text-white
-}
-
-.teal-theme .sidebar h1 {
-  @apply text-black
-}
-
-
-
-
-
-@tailwind preflight;
-@tailwind components;
 @tailwind utilities;
 
-/**
- * Here you would add any custom utilities you need that don't come out of the
- * box with Tailwind.
- *
- * Example :
- *
- * .bg-pattern-graph-paper { ... }
- * .skew-45 { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "utilities/background-patterns";
- * @import "utilities/skew-transforms";
- */
+/* for code higlighting */
+code {
+    font-family: Menlo, Monaco, "Courier New", monospace;
+    font-size: 0.8em
+}
+
+code[class*="language-"],pre[class*="language-"] {
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: normal;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+    line-height: 1.8;
+    color: #76d9e6;
+    text-shadow: none
+}
+
+pre[class*="language-"],:not(pre)>code[class*="language-"] {
+    background: #2a2a2a
+}
+
+pre[class*="language-"] {
+    padding: 2em;
+    margin: 0.5em -2em;
+    border-radius: 4px;
+    overflow: auto
+}
+
+pre[class*="language-"] {
+    position: relative
+}
+
+pre[class*="language-"] code {
+    white-space: pre;
+    display: block
+}
+
+:not(pre)>code[class*="language-"] {
+    padding: 0.15em 0.2em 0.05em;
+    border-radius: .3em;
+    border: 0.13em solid #7a6652;
+    box-shadow: 1px 1px 0.3em -0.1em #000 inset
+}
+
+.token.namespace {
+    opacity: .7
+}
+
+.token.comment,.token.prolog,.token.doctype,.token.cdata {
+    color: #6f705e
+}
+
+.token.operator,.token.boolean,.token.number {
+    color: #a77afe
+}
+
+.token.attr-name,.token.string {
+    color: #e6d06c
+}
+
+.token.entity,.token.url,.language-css .token.string,.style .token.string {
+    color: #e6d06c
+}
+
+.token.selector,.token.inserted {
+    color: #a6e22d
+}
+
+.token.atrule,.token.attr-value,.token.keyword,.token.important,.token.deleted {
+    color: #ef3b7d
+}
+
+.token.regex,.token.statement {
+    color: #76d9e6
+}
+
+.token.placeholder,.token.variable {
+    color: #fff
+}
+
+.token.important,.token.statement,.token.bold {
+    font-weight: bold
+}
+
+.token.punctuation {
+    color: #bebec5
+}
+
+.token.entity {
+    cursor: help
+}
+
+.token.italic {
+    font-style: italic
+}
+
+code.language-markup {
+    color: #f9f9f9
+}
+
+code.language-markup .token.tag {
+    color: #ef3b7d
+}
+
+code.language-markup .token.attr-name {
+    color: #a6e22d
+}
+
+code.language-markup .token.attr-value {
+    color: #e6d06c
+}
+
+code.language-markup .token.style,code.language-markup .token.script {
+    color: #76d9e6
+}
+
+code.language-markup .token.script .token.keyword {
+    color: #76d9e6
+}
+
+mark.highlight-line {
+    color: inherit;
+    background-color: rgba(255,255,255,0.08);
+    display: inline-block
+}
