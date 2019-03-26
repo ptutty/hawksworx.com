@@ -167,7 +167,7 @@ header ul li a.home {
   @apply bg-grey-darkest text-grey-light
 }
 .dark-theme .page-details a  {
-  @apply underline
+  @apply underline text-blue
 }
 .dark-theme .page-details p  {
   @apply text-grey-light
