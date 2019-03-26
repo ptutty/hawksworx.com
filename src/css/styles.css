@@ -151,6 +151,10 @@ header ul li a.home {
     @apply w-6 pl-2 align-middle opacity-50
 }
 
+.showsearch {
+  @apply hidden
+}
+
 
 
 

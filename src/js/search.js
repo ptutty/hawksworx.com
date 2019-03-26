@@ -53,7 +53,7 @@
       searchIndex = response.search;
     });
 
-    searchUI.classList.toggle('invisible');
+    searchUI.classList.toggle('showsearch');
     searchInput.focus();
 
     // listen for input changes

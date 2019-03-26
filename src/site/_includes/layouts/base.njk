@@ -17,6 +17,11 @@
       <header>
         <div class="sidebar-container">
             {% include "navigation.njk" %}
+            <div class="search-ui showsearch pt-4">
+              <input type="text" id="search-str" class="search-str bg-grey-lighter appearance-none border-2 border-grey-lighter rounded w-full py-2 px-4 text-grey-darker leading-tight focus:outline-none focus:bg-white focus:border-purple">
+              <ol class="search-results"><ol>
+              </ol></ol>
+            </div>
             <div class="page-details">
               {% block sidebar %}
                 <h1>{{ title }}</h1>
