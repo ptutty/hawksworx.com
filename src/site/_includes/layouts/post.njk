@@ -15,7 +15,7 @@
 
 
 {% block content %}
-  <div class="text-lg italic">
+  <div class="text-lg italic pb-8">
     {{ content | section | safe }}
   </div>
   {{ content | section('remainder') | safe }}
