@@ -2,11 +2,12 @@
 @tailwind components;
 
 
-/* base page styles */
-
+/*
+* page styles
+*/
 
 body a {
-  @apply no-underline text-blue
+    @apply no-underline text-blue
 }
 
 body {
@@ -153,6 +154,10 @@ header ul li a.home {
 
 .showsearch {
   @apply hidden
+}
+
+.search-results {
+  @apply text-white
 }
 
 

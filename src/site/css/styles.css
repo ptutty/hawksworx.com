@@ -768,6 +768,10 @@ header ul li a.home {
   display: none;
 }
 
+.search-results {
+  color: #fff;
+}
+
 /* themes  */
 
 /* bright-theme */

@@ -1,12 +1,11 @@
 ---
 permalink: null
-title: Contentful and GitHub help make JAMstack_Conf a reality
-date: 2018-10-16
+title: Asynchronous JavaScript with Promises & Async/Await in JavaScript
+date: 2019-10-16
 tags:
-  - netlify
-  - events
-  - jamstack
-externalurl: https://www.netlify.com/blog/2018/10/16/contentful-and-github-help-make-jamstack_conf-a-reality/
+  - Error handling
+  - Javascript
+externalurl: https://www.andreasjakl.com/asynchronous-javascript-with-promises-async-await-in-javascript/
 ---
 
-GitHub and Contentful bring so much to JAMstack_Conf as the platinum sponsors. Here's why.
+From the perspective of a C# developer, the introduction of Async and Await into the latest JavaScript version (ECMAScript 2017+) is a welcome addition. It makes asynchronous code a lot cleaner and more readable.

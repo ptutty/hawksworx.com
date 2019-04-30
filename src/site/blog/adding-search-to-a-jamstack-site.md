@@ -10,13 +10,12 @@ photoCredits:
 pageClass: "teal-theme"
 ---
 
-CMALT, our Certified Membership scheme,  is a peer-based professional accreditation scheme developed by ALT to enable people whose work involves learning technology to have their experience and capabilities certified by peers and demonstrate that they are taking a committed and serious approach to their professional development.
+There are a number of services available to can bring fully featured, rich, search functionality to your sites. If I had needed more sophisticated searching, with things like fuzzy matching, related content associations, and deep search analytics, I could have used a service like [Algolia](https://www.algolia.com/), who are experts in this sort of thing.
 
 ![Searching](/images/sandro-kradolfer-1077230-unsplash.png "Searching")
 
 <!--more-->
 
-There are a number of services available to can bring fully featured, rich, search functionality to your sites. If I had needed more sophisticated searching, with things like fuzzy matching, related content associations, and deep search analytics, I could have used a service like [Algolia](https://www.algolia.com/), who are experts in this sort of thing.
 
 
 ## Some requirements
