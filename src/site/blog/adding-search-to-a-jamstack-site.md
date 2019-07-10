@@ -5,7 +5,7 @@ date: 2018-10-18
 allowcomments: true
 tags: ["jamstack", "javascript", "tips"]
 photoCredits:
-  - name: "Sandro Kradolfer"
+  -name: "Sandro Kradolfer"
   -url: "https://unsplash.com/photos/IVYZWptFt1g"
 pageClass: "teal-theme"
 ---
@@ -33,11 +33,11 @@ My needs on this site are relatively simple. So rather than using an external se
 A summary of the approach I chose to take is:
 
 1. Provide a Google search form as a fallback on a Search page
-1. Hijack the link to that Search page with JavaScript
-1. When a user clicks search, silently load a [JSON index](/search.json) of the content
-1. Display a search UI
-1. On each keypress in the search UI, search our JSON for string matches
-1. Display links to the matches found
+2. Hijack the link to that Search page with JavaScript
+3. When a user clicks search, silently load a [JSON index](/search.json) of the content
+4. Display a search UI
+5. On each keypress in the search UI, search our JSON for string matches
+6. Display links to the matches found
 
 Let's look at some of this a little more closely.
 
