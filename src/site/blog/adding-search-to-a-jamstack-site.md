@@ -6,7 +6,7 @@ allowcomments: true
 tags: ["jamstack", "javascript", "tips"]
 photoCredits:
   - name: "Sandro Kradolfer"
-    url: "https://unsplash.com/photos/IVYZWptFt1g"
+  -url: "https://unsplash.com/photos/IVYZWptFt1g"
 pageClass: "teal-theme"
 ---
 
