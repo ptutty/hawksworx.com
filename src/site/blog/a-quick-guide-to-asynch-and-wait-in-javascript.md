@@ -4,7 +4,7 @@ description: In this post I'll show you how to make multiple concurrent API requ
 date: 2019-06-10
 allowcomments: true
 tags: ["APIs", "JavaScript", "Node.js"]
-pageClass: "teal-blue"
+pageClass: "teal-theme"
 ---
 
 In this post I'll show you how to make multiple concurrent API requests and then process the results into one JSON file. We'll use this file JSON file as the data used for a typeahead searchbox. As these are asynchronous operations we'll be working with promises, however with the introduction of async and await methods in ES6 we no longer need all that boilerplate promise code and can write clear synchronous like code. 
