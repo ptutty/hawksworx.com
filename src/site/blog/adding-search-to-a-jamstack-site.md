@@ -4,12 +4,6 @@ description: Using progressive enhancement, JavaScript and a static site generat
 date: 2018-10-18
 allowcomments: true
 tags: ["jamstack", "javascript", "tips"]
-<<<<<<< HEAD
-=======
-photoCredits:
-  - name: "Sandro Kradolfer"
-    url: "https://unsplash.com/photos/IVYZWptFt1g"
->>>>>>> parent of 6fe8381... new post on async and await
 pageClass: "teal-theme"
 ---
 
