@@ -4,9 +4,6 @@ description: I'm getting older and slower....
 date: "2019-03-25"
 allowcomments: true
 tags: ["Running", "Mindfulness", "Outdoors"]
-photoCredits:
-  - name: "Photo by Joshua J. Cotten on Unsplash"
-    url: "https://unsplash.com/photos/IVYZWptFt1g"
 pageClass: "blue-theme"
 ---
 
