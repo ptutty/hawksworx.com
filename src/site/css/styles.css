@@ -530,7 +530,9 @@ table {
   }
 }
 
-/* base page styles */
+/*
+* page styles
+*/
 
 body a {
   text-decoration: none;
