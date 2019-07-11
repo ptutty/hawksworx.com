@@ -61,7 +61,6 @@ As this is a asynchronous operation we need to wait for all promises to be resol
 This file is used by the d3.js library in the frontend to visually generated the nodes and edges.
 
 
-
 ## Filters
 
 Filter allow you to remove unwanted cruff from the visualisation, such as: page anchors links, links back to the homepage, links to documents, intranet links etc. See the array 'excludeAnchorsWhichContain' below
@@ -88,13 +87,13 @@ Sometime you may wish not to crawl the navigation again on each subpage, you can
 
 To start a crawl, run the command below in the console - make sure you are in the project directory.
 
-```console
+```bash
   node app.js
 ```
 You will see URL's being crawled in the console.
 You can also run a crawl and capture optional screenshots
 
-```console
+```bash
   node app.js --screenshots
 ```
 
@@ -102,7 +101,7 @@ You can also run a crawl and capture optional screenshots
 
 Start a local server.
 
-```console
+```bash
   node server.js
 ```
 Then open the URL below in a browser:
