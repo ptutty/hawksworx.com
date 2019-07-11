@@ -1,7 +1,7 @@
 ---
 permalink: null
 title: Asynchronous JavaScript with Promises & Async/Await in JavaScript
-date: 2019-04-16
+date: 2019-10-16
 tags:
   - Error handling
   - Javascript
